@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pictures Page</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      background-color: rgb(85, 184, 230);
+    }
+.gallery{
+  display: grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap: 15px;
+  justify-items: center;
+  margin: 20px;
+}
+
+
+
+    .gallery img {
+      width: 100%;
+      max-width:200px ;
+      margin: 10px;
+      border-radius: 10px;
+      transition: transform 0.3s;
+      height: auto;
+      
+      
+    }
+    .gallery img:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <h1 style="color: rgb(13, 3, 24);">EXPLORE FOR MORE EXCLUSIVE SERVICES</h1>
+  <p><span style="color: darkred;">Click the icons to explore</span></p>
+  <div class="gallery">
+    <img src="images/images (28).jpeg" alt="Picture 1" onclick="Books()">
+    <img src="images/images (27).jpeg" alt="Picture 2" onclick="Studio()">
+    <img src="images/images (2).png" alt="Picture 3" onclick="computers()">
+    <img src="images/images (1).png" alt="Picture 4" onclick="office()">
+    <img src="images/images (3).png" alt="picture 5" onclick="VS()">
+    <img src="images/images (14).jpeg" alt="picture 6" onclick="web()">
+
+  </div>
+<br>
+<style>
+  .img1{
+width: 200px;
+padding-left: 800px;
+
+  }
+</style>
+
+
+  <img src="images/images (25).jpeg" alt="picture 7" class="img1" onclick="homepage()">
+
+  <script>
+
+function homepage(){
+  window.location.href ="HOME PAGE.html"
+}
+  </script>
+  
+
+
+
+<script>
+
+  function Books(){
+    window.location.href="Books.html"
+  }
+</script>
+
+
+<script>
+function Studio(){
+  window.location.href="Studio.html"
+}
+</script>
+
+<script>
+
+  function web(){
+    window.location.href="web.html"
+  }
+</script>
+
+
+
+
+<script>
+
+  function computers(){
+    window.location.href="computers.html"
+  }
+</script>
+
+<script>
+
+  function VS(){
+    window.location.href="VS.html"
+  }
+</script>
+
+
+
+<script>
+
+  function office(){
+    window.location.href="office.html"
+  }
+</script>
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
