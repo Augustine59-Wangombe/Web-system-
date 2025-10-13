@@ -17,7 +17,7 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <style>
-body {
+.Home{
 display: flex;
 justify-content: center;
 align-items: center;
@@ -34,7 +34,8 @@ overflow: hidden;
 border-radius: 15px;
 box-shadow: 0 4px 15px rgba(0,0,0,0.5);
 }
-.slideshow img {
+
+<body class="Home">.slideshow img {
 position: absolute;
 width: 100%;
 height: 100%;
@@ -47,7 +48,6 @@ opacity: 1;
 }
 </style>
 </head>
-<body>
 <div class="slideshow">
 <img src="images/images (30).jpeg" class="active"
 alt="Image 1">
@@ -65,7 +65,7 @@ function changeImage() {slides[index].classList.remove('active');index = (index 
 setInterval(changeImage, 3000); // changes
 every 3 seconds
 </script>
-
+</body>
   <style>
     h1 {
       text-align: center;
@@ -204,6 +204,7 @@ Welcome to Augustine Tech Solutions a field of creativity, innovation, and smart
 </body>
 
 </html>
+
 
 
 
