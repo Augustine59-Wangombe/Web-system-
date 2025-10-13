@@ -57,6 +57,7 @@ alt="Image 1">
 <img src="images/Screenshot (80).png" alt="Image 4">
 </div>
 <script>
+ document.addEventListener("DOMcontentLoaded", () => {
 const
 slides
 =
@@ -64,7 +65,7 @@ document.querySelectorAll('.slideshow img');
 let index = 0;
 function changeImage() {slides[index].classList.remove('active');index = (index + 1) % slides.length;slides[index].classList.add('active');}
 setInterval(changeImage, 3000); // changes
-every 3 seconds
+every 3 seconds });
 </script>
 </body>
   <style>
@@ -205,6 +206,7 @@ Welcome to Augustine Tech Solutions a field of creativity, innovation, and smart
 </body>
 
 </html>
+
 
 
 
