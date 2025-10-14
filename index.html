@@ -46,7 +46,47 @@
   }
 </style>
 
+margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
+  /* Optional fade effect */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1s;
+  }
+
+  @keyframes fade {
+    from {opacity: 0.4;}
+    to {opacity: 1;}
+  }
+</style>
+
+<div class="slideshow-container">
+  <img class="slide fade" src="images/Screenshot (80).png alt="Slide 1">
+  <img class="slide fade" src="images/tech.jpg" alt="Slide 2">
+  <img class="slide fade" src="images/images (30).jpeg" alt="Slide 3">
+  <img class="slide fade" src="images/Screenshot (75).png alt="Slide 4">
+  <img class="slide fade" src="images/ alt="Slide 5">
+</div>
+
+<script>
+  let slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    let slides = document.getElementsByClassName("slide");
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1 }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 3000); // Change image every 3 seconds
+  }
+</script>
   
 
 <style>
@@ -110,47 +150,7 @@
 
   /* Make slideshow at top and centered */
   body {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  /* Optional fade effect */
-  .fade {
-    animation-name: fade;
-    animation-duration: 1s;
-  }
-
-  @keyframes fade {
-    from {opacity: 0.4;}
-    to {opacity: 1;}
-  }
-</style>
-
-<div class="slideshow-container">
-  <img class="slide fade" src="images/Screenshot (80).png alt="Slide 1">
-  <img class="slide fade" src="images/tech.jpg" alt="Slide 2">
-  <img class="slide fade" src="images/images (30).jpeg" alt="Slide 3">
-  <img class="slide fade" src="images/Screenshot (75).png alt="Slide 4">
-  <img class="slide fade" src="images/ alt="Slide 5">
-</div>
-
-<script>
-  let slideIndex = 0;
-  showSlides();
-
-  function showSlides() {
-    let slides = document.getElementsByClassName("slide");
-    for (let i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) { slideIndex = 1 }
-    slides[slideIndex - 1].style.display = "block";
-    setTimeout(showSlides, 3000); // Change image every 3 seconds
-  }
-</script>
+    
   
   <!-- Icon -->
   <img src="images/Screenshot (70).png" alt="Click Icon" class="icon" onclick="goToPictures()">
@@ -209,6 +209,7 @@ Welcome to Augustine Tech Solutions a field of creativity, innovation, and smart
 </body>
 
 </html>
+
 
 
 
