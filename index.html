@@ -39,12 +39,44 @@
       80%  { color: gold; }
       90%  { color: cyan; }
       100% { color: lime; }
-  
-<style>
-  .H1{
-    padding-right: 270px;
+ <style>
+  /* Container for slideshow */
+  .slideshow-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* Hide all images by default */
+  .slide {
+    width: 100%;
+    height: auto;
+    display: none;
+  }
+
+  /* Make slideshow centered at the top */
+  body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Optional fade animation for smooth effect */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1s;
+  }
+
+  @keyframes fade {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
   }
 </style>
+ 
+   
 
 
 <div class="slideshow-container">
@@ -156,6 +188,7 @@ Welcome to Augustine Tech Solutions a field of creativity, innovation, and smart
 </body>
 
 </html>
+
 
 
 
