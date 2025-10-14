@@ -39,74 +39,7 @@
       80%  { color: gold; }
       90%  { color: cyan; }
       100% { color: lime; }
- <style>
-  /* Container for slideshow */
-  .slideshow-container {
-    width: 100%;
-    max-width: 1200%;
-    height: auto;
-    overflow: hidden
-  
-  }
 
-  /* Hide all images by default */
-  .slide {
-    width: 100%;
-    height: auto;
-    display: none;
-    padding-left:200px;
-    max-width:1200%;
-  }
-
-  /* Make slideshow centered at the top */
-  body {
-    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  /* Optional fade animation for smooth effect */
-  .slidefade {
-    animation-name: fade;
-    animation-duration: 1s;
-  }
-
-  @keyframes fade {
-    from { opacity: 0.4; }
-    to { opacity: 1; }
-  }
-    .slidefade{
-      padding-left:300px;
-    }
-</style>
- 
-   
-
-
-<div class="slideshow-container">
-  <img class="slidefade" src="images/Screenshot (80).png alt="Slide 1">
-  <img class="slidefade" src="images/tech.jpg" alt="Slide 2">
-  <img class="slidefade" src="images/images (30).jpeg" alt="Slide 3">
-  <img class="slidefade" src="images/Screenshot (75).png alt="Slide 4">
-  <img class="slidefade" src="images/soft.jpg alt="Slide 5">
-</div>
-
-<script>
-  let slideIndex = 0;
-  showSlides();
-
-  function showSlides() {
-    let slides = document.getElementsByClassName("slide");
-    for (let i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) { slideIndex = 1 }
-    slides[slideIndex - 1].style.display = "block";
-    setTimeout(showSlides, 1000); // Change image every 3 seconds
-  }
-</script>
   
 
 <h1 class="H1">Explore more on Tech  </h1>
@@ -193,6 +126,7 @@ Welcome to Augustine Tech Solutions a field of creativity, innovation, and smart
 </body>
 
 </html>
+
 
 
 
