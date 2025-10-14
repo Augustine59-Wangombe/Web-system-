@@ -39,71 +39,7 @@
       80%  { color: gold; }
       90%  { color: cyan; }
       100% { color: lime; }
-
-.slideshow-section {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  background: #000;
-}
-
-.slideshow-section .slideshow-container {
-  position: relative;
-  width: 100%;
-  max-width: 1200px; /* Limits slideshow width */
-  overflow: hidden;
-}
-
-.slideshow-section .slide {
-  width: 100%;
-  height: auto; /* Keeps image proportions */
-  display: none;
-  transition: opacity 1s ease-in-out;
-}
-
-.slideshow-section .slide.active {
-  display: block;
-}
-
-/* --- Other content below slideshow --- */
-.main-content {
-  padding: 20px;
-  text-align: center;
-}
-  </style>
-</head>
-<body>
-
   
-  <div class="slideshow-section">
-    <div class="slideshow-container">
-      <img class="slide" src="images/images (30).jpeg" alt="Slide 1">
-      <img class="slide" src="images/Screenshot (75).png" alt="Slide 2">
-      <img class="slide" src="images/Screenshot (80).png" alt="Slide 3">
-    </div>
-  </div>
-  <script>
- let slides = document.querySelectorAll('.slideshow-section .slide');
-let current = 0;
-
-function showSlide(index) {
-  slides.forEach((slide, i) => {
-    slide.classList.remove('active');
-    if (i === index) {
-      slide.classList.add('active');
-    }
-  });
-}
-
-function nextSlide() {
-  current++;
-  if (current >= slides.length) current = 0;
-  showSlide(current);
-}
-
-showSlide(current);
-setInterval(nextSlide, 3000);
-  </script>
 <style>
   .H1{
     padding-right: 270px;
@@ -155,6 +91,66 @@ setInterval(nextSlide, 3000);
 </head>
 
 <body>
+  <style>
+  /* Slideshow container */
+  .slideshow-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* Each image */
+  .slide {
+    width: 100%;
+    height: auto;
+    display: none;
+  }
+
+  /* Make slideshow at top and centered */
+  body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Optional fade effect */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1s;
+  }
+
+  @keyframes fade {
+    from {opacity: 0.4;}
+    to {opacity: 1;}
+  }
+</style>
+
+<div class="slideshow-container">
+  <img class="slide fade" src="images/screenshot (75).png" alt="Slide 1">
+  <img class="slide fade" src="images/image2.jpg" alt="Slide 2">
+  <img class="slide fade" src="images/image3.jpg" alt="Slide 3">
+  <img class="slide fade" src="images/image4.jpg" alt="Slide 4">
+  <img class="slide fade" src="images/image5.jpg" alt="Slide 5">
+</div>
+
+<script>
+  let slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    let slides = document.getElementsByClassName("slide");
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1 }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 3000); // Change image every 3 seconds
+  }
+</script>
   
   <!-- Icon -->
   <img src="images/Screenshot (70).png" alt="Click Icon" class="icon" onclick="goToPictures()">
@@ -213,6 +209,7 @@ Welcome to Augustine Tech Solutions a field of creativity, innovation, and smart
 </body>
 
 </html>
+
 
 
 
