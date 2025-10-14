@@ -67,7 +67,7 @@
   }
 
   /* Optional fade animation for smooth effect */
-  .fade {
+  .slidefade {
     animation-name: fade;
     animation-duration: 1s;
   }
@@ -76,7 +76,7 @@
     from { opacity: 0.4; }
     to { opacity: 1; }
   }
-    .slide fade{
+    .slidefade{
       padding-left:300px;
     }
 </style>
@@ -85,11 +85,11 @@
 
 
 <div class="slideshow-container">
-  <img class="slide fade" src="images/Screenshot (80).png alt="Slide 1">
-  <img class="slide fade" src="images/tech.jpg" alt="Slide 2">
-  <img class="slide fade" src="images/images (30).jpeg" alt="Slide 3">
-  <img class="slide fade" src="images/Screenshot (75).png alt="Slide 4">
-  <img class="slide fade" src="images/soft.jpg alt="Slide 5">
+  <img class="slidefade" src="images/Screenshot (80).png alt="Slide 1">
+  <img class="slidefade" src="images/tech.jpg" alt="Slide 2">
+  <img class="slidefade" src="images/images (30).jpeg" alt="Slide 3">
+  <img class="slidefade" src="images/Screenshot (75).png alt="Slide 4">
+  <img class="slidefade" src="images/soft.jpg alt="Slide 5">
 </div>
 
 <script>
@@ -104,7 +104,7 @@
     slideIndex++;
     if (slideIndex > slides.length) { slideIndex = 1 }
     slides[slideIndex - 1].style.display = "block";
-    setTimeout(showSlides, 3000); // Change image every 3 seconds
+    setTimeout(showSlides, 1000); // Change image every 3 seconds
   }
 </script>
   
@@ -193,6 +193,7 @@ Welcome to Augustine Tech Solutions a field of creativity, innovation, and smart
 </body>
 
 </html>
+
 
 
 
