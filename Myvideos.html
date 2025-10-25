@@ -6,6 +6,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Downloadable Video Gallery</title>
   <style>
+  /* === Page styling === */
+  body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  /* === Header bar === */
+  header {
+    background: #0059b3;
+    color: white;
+    padding: 15px 0;
+    font-size: 1.7em;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  }
+
+  /* === Video container === */
+  .video-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    padding: 25px;
+  }
+
+  /* === Google Drive iframe === */
+  iframe {
+    width: 100%;
+    height: 700px;
+    border: none;
+    border-radius: 10px;
+  }
+
+  /* === Footer section === */
+  footer {
+    margin-top: 40px;
+    color: #555;
+    font-size: 0.9em;
+    padding-bottom: 20px;
+  }
+</style>
+
+<header>
+  🎥 My Google Drive Video Collection
+</header>
+
+<div class="video-container">
+  <!-- Google Drive Folder Embed -->
+  <iframe 
+    src="https://drive.google.com/embeddedfolderview?id=1MqG9L1PhtfBA22fVOQQwY13IKoP7-n3#grid" 
+    allow="autoplay">
+  </iframe>
+</div>
+
+<footer>
+  © 2025 My Dashboard | All videos hosted on Google Drive
+</footer>
+  <style>
     body {
       font-family: Arial, sans-serif;
       background-color: #f9f9f9;
@@ -189,3 +252,4 @@
 </body>
 
 </html>
+
