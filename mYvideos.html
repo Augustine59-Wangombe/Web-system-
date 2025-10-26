@@ -1,0 +1,100 @@
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 40px;
+    text-align: center;
+  }
+
+  h1 {
+    color: #333;
+    margin-bottom: 30px;
+  }
+
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .video-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding-bottom: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .video-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  }
+
+  video {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+  }
+
+  a.download-btn {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 20px;
+    background: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s;
+  }
+
+  a.download-btn:hover {
+    background: #0056b3;
+  }
+</style>
+
+<h1>My Video Collection</h1>
+
+<div class="video-grid">
+
+  <!-- 🟢 VIDEO 1 -->
+  <div class="video-card">
+    <video controls>
+      <source src="https://www.dropbox.com/scl/fi/aa1ksrr1y0x5k9j7tiaew/Augustine-Winner.mp4?rlkey=x1rctws57edlth2qplisapad9&st=6nky0ubp&dl=0" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <a href="https://www.dropbox.com/scl/fi/aa1ksrr1y0x5k9j7tiaew/Augustine-Winner.mp4?rlkey=x1rctws57edlth2qplisapad9&st=6nky0ubp&dl=0" class="download-btn">Download Video</a>
+  </div>
+
+  <!-- 🟢 VIDEO 2 -->
+  <div class="video-card">
+    <video controls>
+      <source src="https://www.dropbox.com/scl/fi/vqsw1lsvfgn9dt3rlta5h/Augustine-59.mp4?rlkey=o1lfogp392fngg8b0bk0d14lo&st=yn6b6rva&dl=0" type="video/mp4">
+    </video>
+    <a href="https://www.dropbox.com/scl/fi/vqsw1lsvfgn9dt3rlta5h/Augustine-59.mp4?rlkey=o1lfogp392fngg8b0bk0d14lo&st=yn6b6rva&dl=0" class="download-btn">Download Video</a>
+  </div>
+
+  <!-- 🟢 VIDEO 3 -->
+  <div class="video-card">
+    <video controls>
+      <source src="https://www.dropbox.com/scl/fi/kke2el3i74hhgsi8c92ej/AugustineW.mp4?rlkey=rulbt4h3auzo15oxsabpgj386&st=3ony6psw&dl=0" type="video/mp4">
+    </video>
+    <a href="https://www.dropbox.com/scl/fi/kke2el3i74hhgsi8c92ej/AugustineW.mp4?rlkey=rulbt4h3auzo15oxsabpgj386&st=3ony6psw&dl=0" class="download-btn">Download Video</a>
+  </div>
+
+  <!-- You can copy this block to add more videos -->
+  <!-- 🟢 VIDEO 4 -->
+  <!--
+  <div class="video-card">
+    <video controls>
+      <source src="https://www.dropbox.com/s/REPLACE_THIS_WITH_YOUR_LINK_4?raw=1" type="video/mp4">
+    </video>
+    <a href="https://www.dropbox.com/s/REPLACE_THIS_WITH_YOUR_LINK_4?dl=1" class="download-btn">Download Video</a>
+  </div>
+  -->
+
+</div>
