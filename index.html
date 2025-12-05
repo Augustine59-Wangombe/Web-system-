@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,9 +8,22 @@
   <meta charset="UTF-8">
   <title>Software engineer Augustine Wang'ombe</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
   <style>
-    h1 {
+    /* Reset default spacing */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff; /* White background */
       text-align: center;
+    }
+
+    h1 {
       font-size: 45px;
       font-weight: bold;
       animation: rainbowColors 3s infinite;
@@ -31,36 +43,26 @@
       100% { color: lime; }
     }
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      background: #fff; /* White background */
-    }
-
+    /* Slider Styles */
     .slider {
       position: relative;
       width: 100%;
       height: 90vh;
       overflow: hidden;
+      margin-bottom: 0; /* Remove extra spacing */
     }
 
     .slide {
       position: absolute;
       width: 100%;
-      height:auto;
+      height: auto;
       opacity: 0;
       transition: opacity 1.5s ease-in-out;
     }
 
     .slide img {
       width: 100%;
-      max-width:1200%;
-      height:auto;
+      height: auto;
       object-fit: cover;
     }
 
@@ -74,7 +76,7 @@
       bottom: 50px;
       left: 50px;
       color: #fff;
-      background: rgba(0, 0, 0, 0.5);
+      background: rgba(0,0,0,0.5);
       padding: 15px 25px;
       border-radius: 10px;
       font-size: 1.5em;
@@ -102,7 +104,6 @@
 
     .prev { left: 20px; }
     .next { right: 20px; }
-
     .nav-btn:hover { background-color: rgba(0,0,0,0.8); }
 
     .dots {
@@ -125,11 +126,32 @@
 
     .active-dot { background-color: #fff; }
 
+    /* Explore more and content */
+    .H1 {
+      margin: 20px 0 10px 0;
+    }
+
     .P1 {
       line-height: 26px;
       font-size: 21px;
-      padding: 20px;
-      text-align: center;
+      padding: 0 20px;
+      margin-bottom: 20px;
+    }
+
+    .IMG1 {
+      width: 100%;
+      max-width: 1200px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    .icon {
+      width:100%;
+      max-width: 800px;
+      height:auto;
+      cursor: pointer;
+      transition: transform 0.3s;
+      margin-bottom: 20px;
     }
   </style>
 </head>
@@ -141,22 +163,22 @@
 
 <!-- Slider -->
 <div class="slider">
-    <div class="slide active">
-      <img src="images/Screenshot (80).png" alt="Slide 1">
-      <div class="caption">Field of innovation</div>
-    </div>
-    <div class="slide">
-      <img src="images/tech.jpg" alt="Slide 2">
-      <div class="caption">Smart Technology</div>
-    </div>
-    <div class="slide">
-      <img src="images/soft.jpg" alt="Slide 3">
-      <div class="caption">Augustine Tech Solutions</div>
-    </div>
-    <div class="slide">
-      <img src="images/Screenshot (75).png" alt="Slide 4">
-      <div class="caption">Learn more on programming principals</div>
-    </div>
+  <div class="slide active">
+    <img src="images/Screenshot (80).png" alt="Slide 1">
+    <div class="caption">Field of innovation</div>
+  </div>
+  <div class="slide">
+    <img src="images/tech.jpg" alt="Slide 2">
+    <div class="caption">Smart Technology</div>
+  </div>
+  <div class="slide">
+    <img src="images/soft.jpg" alt="Slide 3">
+    <div class="caption">Augustine Tech Solutions</div>
+  </div>
+  <div class="slide">
+    <img src="images/Screenshot (75).png" alt="Slide 4">
+    <div class="caption">Learn more on programming principals</div>
+  </div>
 </div>
 
 <button class="nav-btn prev" onclick="moveSlide(-1)">&#10094;</button>
@@ -194,7 +216,7 @@ setInterval(() => {
 }, 5000);
 </script>
 
-<h1 class="H1">Explore more on Tech </h1>
+<h1 class="H1">Explore more on Tech</h1>
 
 <img src="images/Screenshot (70).png" alt="Click Icon" class="icon" onclick="goToPictures()">
 <script>
@@ -208,9 +230,15 @@ Welcome to Augustine Tech Solutions a field of creativity, innovation, and smart
 </p>
 
 <img src="images/Screenshot (75).png" alt="picture 2" class="IMG1">
-<a href="https://wa.me/254742217556">Chat on whatsapp</a> <br>
-<a href="mailto:wangombeaugustine58@gmail.com">Send Email</a> <br>
+
+  <style>
+
+    .win{font-size:21px;
+        }
+    
+  </style>
+<a class="win" href="https://wa.me/254742217556">Chat on whatsapp</a> <br>
+<a  class="win" href="mailto:wangombeaugustine58@gmail.com">Send Email</a> <br>
 
 </body>
 </html>
-
