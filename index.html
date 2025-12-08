@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="google-site-verification" content="Zn5SE5OY2a8pjlxWB5DXE9zfUo5QjgPcYT4Rn33jnB4" />
+  <meta charset="UTF-8">
   <meta name="description" content="Augustine Tech Solutions - Web systems, programming, and IT services.">
   <meta name="keywords" content="web development, Augustine Wangombe, GitHub Pages, IT services">
   <meta name="author" content="Augustine Wangombe">
-  <meta charset="UTF-8">
   <title>Software engineer Augustine Wang'ombe</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
   <style>
-    /* Reset default spacing */
     * {
       margin: 0;
       padding: 0;
@@ -26,111 +23,52 @@
     h1 {
       font-size: 45px;
       font-weight: bold;
-      animation: rainbowColors 3s infinite;
     }
 
-    @keyframes rainbowColors {
-      0% { color: red; }
-      10% { color: orange; }
-      20% { color: yellow; }
-      30% { color: green; }
-      40% { color: blue; }
-      50% { color: indigo; }
-      60% { color: violet; }
-      70% { color: pink; }
-      80% { color: gold; }
-      90% { color: cyan; }
-      100% { color: lime; }
-    }
-
-    /* ---------------------------- */
-    /* FIXED & ALIGNED SLIDER CODE */
-    /* ---------------------------- */
+    /* ==========================
+       CLEAN RESPONSIVE SLIDER
+       ========================== */
     .slider {
       position: relative;
       width: 100%;
-      height: 420px; /* FIXED HEIGHT FOR PERFECT ALIGNMENT */
+      max-width: 1200px; /* REQUIRED SIZE */
+      margin: 0 auto;
       overflow: hidden;
-      margin: 0;
-      padding: 0;
     }
 
     .slide {
       position: absolute;
-      top: 0;
-      left: 0;
       width: 100%;
-      height: 100%;
       opacity: 0;
       transition: opacity 1.5s ease-in-out;
     }
 
-    .slide img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; /* SAME SIZE FOR ALL IMAGES */
-      display: block;
-    }
-
     .slide.active {
       opacity: 1;
-      z-index: 2;
+      position: relative;
+    }
+
+    .slide img {
+      width: 100%;
+      height: auto;  
+      display: block;
+      object-fit: cover;
     }
 
     .caption {
       position: absolute;
-      bottom: 25px;
-      left: 25px;
-      background: rgba(0, 0, 0, 0.55);
-      padding: 12px 25px;
-      border-radius: 8px;
-      font-size: 1.3em;
-      color: #fff;
-    }
-
-    .nav-btn {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background-color: rgba(0,0,0,0.5);
-      color: #fff;
-      border: none;
+      bottom: 20px;
+      left: 20px;
       padding: 10px 20px;
-      cursor: pointer;
-      font-size: 18px;
-      border-radius: 50%;
-      z-index: 5;
+      background: rgba(0,0,0,0.6);
+      color: white;
+      font-size: 1.2rem;
+      border-radius: 6px;
     }
 
-    .prev { left: 20px; }
-    .next { right: 20px; }
-    .nav-btn:hover { background-color: rgba(0,0,0,0.8); }
-
-    .dots {
-      text-align: center;
-      position: absolute;
-      bottom: 15px;
-      width: 100%;
-      z-index: 5;
-    }
-
-    .dot {
-      height: 12px;
-      width: 12px;
-      margin: 0 4px;
-      background-color: #bbb;
-      border-radius: 50%;
-      display: inline-block;
-      cursor: pointer;
-    }
-
-    .active-dot {
-      background-color: #fff;
-    }
-
-    /* Explore more and content */
+    /* EXPLORE MORE */
     .H1 {
-      margin: 0;
+      margin-top: 20px;
       padding: 10px 0;
     }
 
@@ -138,160 +76,7 @@
       line-height: 26px;
       font-size: 21px;
       padding: 0 20px;
-      margin-bottom: 20px;
-    }
-
-    .IMG1 {
-      width: 100%;
-      max-width: 1200px;
-      height: auto;
-      margin-bottom: 20px;
-    }
-
-    .icon {
-      width: 100%;
-      max-width: 800px;
-      height: auto;
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta name="google-site-verification" content="Zn5SE5OY2a8pjlxWB5DXE9zfUo5QjgPcYT4Rn33jnB4" />
-  <meta name="description" content="Augustine Tech Solutions - Web systems, programming, and IT services.">
-  <meta name="keywords" content="web development, Augustine Wangombe, GitHub Pages, IT services">
-  <meta name="author" content="Augustine Wangombe">
-  <meta charset="UTF-8">
-  <title>Software engineer Augustine Wang'ombe</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
-  <style>
-    /* Reset default spacing */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      background: #fff;
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 45px;
-      font-weight: bold;
-      animation: rainbowColors 3s infinite;
-    }
-
-    @keyframes rainbowColors {
-      0% { color: red; }
-      10% { color: orange; }
-      20% { color: yellow; }
-      30% { color: green; }
-      40% { color: blue; }
-      50% { color: indigo; }
-      60% { color: violet; }
-      70% { color: pink; }
-      80% { color: gold; }
-      90% { color: cyan; }
-      100% { color: lime; }
-    }
-
-    /* ---------------------------- */
-    /* FIXED & ALIGNED SLIDER CODE */
-    /* ---------------------------- */
-    .slider {
-      position: relative;
-      width: 100%;
-      height: 420px; /* FIXED HEIGHT FOR PERFECT ALIGNMENT */
-      overflow: hidden;
-      margin: 0;
-      padding: 0;
-    }
-
-    .slide {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      opacity: 0;
-      transition: opacity 1.5s ease-in-out;
-    }
-
-    .slide img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover; /* SAME SIZE FOR ALL IMAGES */
-      display: block;
-    }
-
-    .slide.active {
-      opacity: 1;
-      z-index: 2;
-    }
-
-    .caption {
-      position: absolute;
-      bottom: 25px;
-      left: 25px;
-      background: rgba(0, 0, 0, 0.55);
-      padding: 12px 25px;
-      border-radius: 8px;
-      font-size: 1.3em;
-      color: #fff;
-    }
-
-    .nav-btn {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background-color: rgba(0,0,0,0.5);
-      color: #fff;
-      border: none;
-      padding: 10px 20px;
-      cursor: pointer;
-      font-size: 18px;
-      border-radius: 50%;
-      z-index: 5;
-    }
-
-    .prev { left: 20px; }
-    .next { right: 20px; }
-    .nav-btn:hover { background-color: rgba(0,0,0,0.8); }
-
-    .dots {
-      text-align: center;
-      position: absolute;
-      bottom: 15px;
-      width: 100%;
-      z-index: 5;
-    }
-
-    .dot {
-      height: 12px;
-      width: 12px;
-      margin: 0 4px;
-      background-color: #bbb;
-      border-radius: 50%;
-      display: inline-block;
-      cursor: pointer;
-    }
-
-    .active-dot {
-      background-color: #fff;
-    }
-
-    /* Explore more and content */
-    .H1 {
-      margin: 0;
-      padding: 10px 0;
-    }
-
-    .P1 {
-      line-height: 26px;
-      font-size: 21px;
-      padding: 0 20px;
+      margin-top: 20px;
       margin-bottom: 20px;
     }
 
@@ -311,30 +96,22 @@
       margin-bottom: 20px;
     }
 
-    .win {
-      font-size: 21px;
-    }
-
-    /* MOBILE FIX */
-    @media (max-width: 600px) {
-      .slider {
-        height: 260px; /* Smaller for phones */
-      }
+    @media(max-width: 600px){
       .caption {
-        font-size: 1em;
-        bottom: 15px;
-        left: 15px;
+        font-size: 1rem;
+        bottom: 10px;
+        left: 10px;
       }
     }
   </style>
 </head>
 <body>
 
-<h1 class="animate__animated animate__bounce animate__infinite">
-  Welcome to AUGUSTINE TECH SOLUTIONS
-</h1>
+<h1>Welcome to AUGUSTINE TECH SOLUTIONS</h1>
 
-<!-- Slider -->
+<!-- ======================= -->
+<!-- RESPONSIVE CLEAN SLIDER -->
+<!-- ======================= -->
 <div class="slider">
   <div class="slide active">
     <img src="images/Screenshot (80).png" alt="Slide 1">
@@ -353,45 +130,27 @@
 
   <div class="slide">
     <img src="images/Screenshot (75).png" alt="Slide 4">
-    <div class="caption">Learn more on programming principals</div>
+    <div class="caption">Learn more on programming principles</div>
   </div>
 </div>
 
-<button class="nav-btn prev" onclick="moveSlide(-1)">&#10094;</button>
-<button class="nav-btn next" onclick="moveSlide(1)">&#10095;</button>
-
-<div class="dots" id="dots"></div>
+<!-- No dots, No arrows -->
 
 <script>
-const slides = document.querySelectorAll('.slide');
+const slides = document.querySelectorAll(".slide");
 let index = 0;
 
-const dotsContainer = document.getElementById('dots');
-slides.forEach((_, i) => {
-  const dot = document.createElement('span');
-  dot.classList.add('dot');
-  dot.addEventListener('click', () => showSlide(i));
-  dotsContainer.appendChild(dot);
-});
-const dots = document.querySelectorAll('.dot');
-dots[index].classList.add('active-dot');
-
 function showSlide(i) {
-  slides[index].classList.remove('active');
-  dots[index].classList.remove('active-dot');
+  slides[index].classList.remove("active");
   index = (i + slides.length) % slides.length;
-  slides[index].classList.add('active');
-  dots[index].classList.add('active-dot');
-}
-
-function moveSlide(step) {
-  showSlide(index + step);
+  slides[index].classList.add("active");
 }
 
 setInterval(() => {
-  moveSlide(1);
+  showSlide(index + 1);
 }, 5000);
 </script>
+
 
 <h1 class="H1">Explore more on Tech</h1>
 
@@ -404,13 +163,16 @@ function goToPictures() {
 </script>
 
 <p class="P1">
-Welcome to Augustine Tech Solutions a field of creativity, innovation, and smart technology. We specialize in providing reliable programming, web design, and IT solutions tailored to meet modern digital needs. At Augustine Tech Solutions, we are driven by passion, precision, and problem-solving, helping businesses and individuals build efficient systems, user-friendly websites, and powerful software applications. Our mission is to simplify technology and make it work for you, delivering quality solutions that empower growth, efficiency, and success in the digital world.
+Welcome to Augustine Tech Solutions a field of creativity, innovation, and smart technology. 
+We specialize in providing reliable programming, web design, and IT solutions tailored to meet 
+modern digital needs. At Augustine Tech Solutions, we help businesses and individuals build 
+efficient systems, user-friendly websites, and powerful applications.
 </p>
 
 <img src="images/Screenshot (75).png" alt="picture 2" class="IMG1">
 
-<a class="win" href="https://wa.me/254742217556">Chat on whatsapp</a> <br>
+<a class="win" href="https://wa.me/254742217556">Chat on WhatsApp</a> <br>
 <a class="win" href="mailto:wangombeaugustine58@gmail.com">Send Email</a> <br>
 
 </body>
-  </html>
+</html>
